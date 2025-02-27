@@ -26,7 +26,6 @@ document.querySelector(".close-thanks").addEventListener("click", closeModalthan
 // launch modal form
 function launchModal() {
   modalbg.style.display = "block";
-  document.body.style.overflow = 'hidden';
 }
 
 // close modal form
