@@ -61,6 +61,7 @@
               action="index.html"
               method="get"
               onsubmit="return validate();"
+              novalidate
             >
               <div
                 class="formData">
@@ -81,6 +82,7 @@
                   type="text"
                   id="last"
                   name="last"
+                  minlength="2"
                 /><br>
               </div>
               <div
@@ -185,7 +187,7 @@
                   class="checkbox-input"
                   type="checkbox"
                   id="checkbox1"
-                  checked
+                  required
                 />
                 <label class="checkbox2-label" for="checkbox1" required>
                   <span class="checkbox-icon"></span>
@@ -207,6 +209,17 @@
               />
             </form>
           </div>
+        </div>
+      </div>
+      <div class="bground-thanks">
+        <div class="content">
+          <span class="close-thanks"></span>
+          <div class="modal-body">
+            <h2 class="thanks-headline">Merci pour votre inscription !</h2>
+          </div>
+          <button class="btn-submit">
+            Fermer
+          </button>
         </div>
       </div>
     </main>

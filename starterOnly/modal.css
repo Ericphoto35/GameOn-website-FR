@@ -14,7 +14,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-image: url("background.png");
   font-family: var(--font-default);
   font-size: 18px;
   max-width: 1300px;
@@ -156,6 +155,17 @@ main {
 .smFont {
   font-size: 16px;
 }
+.bground-thanks {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: white;
+}
 
 .bground {
   display: none;
@@ -166,7 +176,7 @@ main {
   height: 100%;
   width: 100%;
   overflow: auto;
-  background-color: rgba(26, 39, 156, 0.4);
+  background-color: white;
 }
 
 .content {
@@ -319,6 +329,32 @@ input[data-error]::after {
   transform: rotate(45deg);
 }
 .close:after {
+  transform: rotate(-45deg);
+}
+
+.close-thanks {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(0.7);
+}
+.close-thanks:before,
+.close-thanks:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 3px;
+  background-color: #fff;
+}
+.close-thanks:before {
+  transform: rotate(45deg);
+}
+.close-thanks:after {
   transform: rotate(-45deg);
 }
 .btn-submit,
@@ -479,6 +515,10 @@ footer {
   margin: 0 20px;
 }
 @media screen and (max-width: 800px) {
+  .header-logo {
+    width: 103px;
+    height: 19px;
+  }
   .hero-section {
     display: block;
     box-shadow: unset;
@@ -515,7 +555,20 @@ footer {
     margin-top: 50px;
     text-align: center;
   }
+  .content {
+    display: flex; /* Utilise flexbox pour positionner le bouton */
+    flex-direction: column; /* Aligner les éléments verticalement */
+    justify-content: space-between; /* Espace entre le haut et le bouton */
+    height: 100%; /* La div .content prend toute la hauteur de .bground-thanks */
+    padding: 30px; /* Ajoute un padding pour l'esthétique */
+    box-sizing: border-box; /* Inclut le padding dans la largeur et la hauteur */
+  }
+  .bground-thanks {
+    top: 29px;
+    overflow-x: hidden;
+  }
 }
+
 
 @keyframes modalopen {
   from {
