@@ -22,6 +22,7 @@ document.querySelector(".close").addEventListener("click", closeModal);
 
 // close modal thanks
 document.querySelector(".close-thanks").addEventListener("click", closeModalthanks);
+document.querySelector(".btn-submit-thanks").addEventListener("click", closeModalthanks);
 
 // launch modal form
 function launchModal() {
