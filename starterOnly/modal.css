@@ -623,12 +623,15 @@ footer {
   .modal-body {
     margin:auto;
   }
-  .btn-submit,.btn-submit-thanks {
-    margin-bottom: 200px;
+  .btn-submit {
+    margin-bottom: 150px;
   }
   .bground-thanks {
     padding:0;
     margin-top: 22%;
+  }
+  .btn-submit-thanks {
+    margin-bottom: 500px;
   }
 }
 
