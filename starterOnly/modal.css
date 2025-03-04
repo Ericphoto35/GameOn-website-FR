@@ -155,15 +155,36 @@ main {
   font-size: 16px;
 }
 .bground-thanks {
-  display: none;
+  display: flex;
+  flex-direction: column; /* Assure que les éléments sont empilés verticalement */
+  align-items: center; /* Centre horizontalement le contenu si nécessaire */
+  justify-content: flex-end; /* Aligne le contenu à la fin (en bas) */
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   overflow: auto;
   background-color: white;
+  margin-top: 22%;
+}
+.content-thanks {
+  display: flex;
+  flex-direction: column; /* Assure que les éléments sont empilés verticalement */
+  align-items: center; /* Centre horizontalement le contenu si nécessaire */
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+  background: #232323;
+  border-radius: 10px;
+  position: relative;
+  color: #fff;
+  padding-top: 10px;
 }
 
 .bground {
@@ -576,6 +597,12 @@ footer {
     justify-content: space-between; 
     height: 90vh; 
     box-sizing: border-box;
+  }
+  .modal-body {
+    margin:auto;
+  }
+  .btn-submit {
+    margin-bottom: 150px;
   }
 }
 
