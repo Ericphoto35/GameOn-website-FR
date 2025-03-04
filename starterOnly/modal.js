@@ -285,7 +285,7 @@ function messageValidation() {
   modalbg.style.display = "none";
   
   // Afficher le message de succès
-  modalthanks.style.display = "block";
+  modalthanks.style.display = "flex";
   
 }
 

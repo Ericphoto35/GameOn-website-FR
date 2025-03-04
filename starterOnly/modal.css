@@ -158,7 +158,6 @@ main {
 }
 .bground-thanks {
   display: none;
-  display: flex;
   flex-direction: column; /* Assure que les éléments sont empilés verticalement */
   align-items: center; /* Centre horizontalement le contenu si nécessaire */
   justify-content: flex-end; /* Aligne le contenu à la fin (en bas) */
@@ -170,14 +169,18 @@ main {
   width: 100%;
   overflow: auto;
   background-color: white;
-  margin-top: 22%;
+  padding: 5%;
+}
+.bground-thanks h2 {
+  font-size: 2.25rem;
+  font-weight: 400; 
 }
 .content-thanks {
   display: flex;
   flex-direction: column; /* Assure que les éléments sont empilés verticalement */
   align-items: center; /* Centre horizontalement le contenu si nécessaire */
   text-align: center;
-  margin: auto;
+  justify-content: center; /* Aligne le contenu au centre */
   width: 100%;
   height: 100%;
   max-width: 500px;
@@ -187,7 +190,24 @@ main {
   border-radius: 10px;
   position: relative;
   color: #fff;
-  padding-top: 10px;
+}
+.modal-body-thanks { 
+    margin:auto;
+}
+.btn-submit-thanks {
+  margin-bottom: 17px;
+  background: #fe142f;
+  display: block;
+  margin: 0 auto;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 12px 82px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  margin-bottom: 17px;
+
+
 }
 
 .bground {
@@ -603,8 +623,12 @@ footer {
   .modal-body {
     margin:auto;
   }
-  .btn-submit {
+  .btn-submit,.btn-submit-thanks {
     margin-bottom: 150px;
+  }
+  .bground-thanks {
+    padding:0;
+    margin-top: 22%;
   }
 }
 
