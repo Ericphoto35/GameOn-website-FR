@@ -18,6 +18,8 @@ body {
   font-size: 18px;
   max-width: 1300px;
   margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
 }
 
 p {
@@ -155,6 +157,7 @@ main {
   font-size: 16px;
 }
 .bground-thanks {
+  display: none;
   display: flex;
   flex-direction: column; /* Assure que les éléments sont empilés verticalement */
   align-items: center; /* Centre horizontalement le contenu si nécessaire */
@@ -461,7 +464,6 @@ input[data-error]::after {
   font-size: 16px;
 }
 .hero-section {
-  min-height: 93vh;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
