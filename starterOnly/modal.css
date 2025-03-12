@@ -628,7 +628,9 @@ footer {
   .bground-thanks {
     padding:0;
   }
-  
+  .btn-submit-thanks {
+    margin-bottom: 100px;
+  }
 }
 
 
