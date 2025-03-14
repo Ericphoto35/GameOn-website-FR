@@ -67,7 +67,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1107px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -75,7 +75,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1107px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -554,7 +554,7 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 961px) {
   .topnav {
     display: flex;
     margin: 15px 30px 28px 30px;
